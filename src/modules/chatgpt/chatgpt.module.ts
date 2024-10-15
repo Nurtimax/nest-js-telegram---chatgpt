@@ -7,5 +7,6 @@ import { HttpModule } from '@nestjs/axios';
   imports: [HttpModule],
   providers: [ChatgptService],
   controllers: [ChatgptController],
+  exports: [ChatgptService],
 })
 export class ChatgptModule {}
